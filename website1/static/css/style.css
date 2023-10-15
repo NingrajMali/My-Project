@@ -1,0 +1,166 @@
+/* Log In page...*/
+
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    background: linear-gradient(120deg,#2980b9,#8e44ad);
+    overflow: hidden;
+    height: 100vh;
+}
+
+.cl1{
+    position: absolute;
+    border-radius: 10px;
+    right: 50%;
+    transform: translate(50%,30%);
+    background: #fff;
+    width: 35%;
+    height: 70vh;
+}
+
+.cl1 h1{
+    text-align: center;
+    margin: 10px;
+    padding: 20px;
+    border-bottom: 1px solid gray;
+    font-size: 3em;
+}
+
+.frm{  
+    position: relative;
+    width: 350px;
+    margin: 70px auto auto auto;
+    
+}
+.cl2{
+    position: relative;
+    border-bottom: 2px solid black;    
+    margin: 30px 0px;
+}
+
+.cl2 input{
+    border: none;
+    width: 100%;
+    height: 3vh;
+    font-size: 1.4em;
+    outline: none;
+    padding: 10px;
+}
+.cl2 label{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 1.2em;
+    color: #737373;
+    pointer-events: none;
+}
+.cl2 span::before{
+    content: '';
+    position: absolute;
+    transform: translate(0px, 0px);
+    width: 0px;
+    height: 2px;
+    background-color: #5e00f4;
+    transition: 0.5s;
+}
+
+.cl2 input:focus ~ label{
+    top: -20px;
+    transition: .5s;
+    color: #5e00f4;
+}
+.cl2 input:focus~span::before{
+    width: 100%;
+}
+
+.log input{
+    text-align: center;
+    width: 100%;
+    color: #fff;
+    background: #4595ff;
+    height: 6vh;
+    font-size: 1.4em;
+    border-radius: 25px;
+    font-weight: 700;
+    margin:20px auto;
+    cursor: pointer;
+}
+
+/* Sign Up page...*/
+
+.signup{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    margin-top: -300px;
+}
+
+.f1{
+    padding: 20px;
+    width: 40%;
+    height: 70vh;
+    background: rgba(255, 255, 255, 0.872);
+    
+    margin: auto auto auto auto;
+    
+}
+
+div h2{
+    margin-top: -10px;
+    font-size: 3em;
+    padding: 60px;
+    text-align: center;
+    border-bottom: 2px solid black;
+}
+
+.d1{
+    position: relative;
+    width: 70%;
+    height: 7vh;
+    margin: auto;
+    align-items: center;
+}
+.d1 input{
+    width: 90%;
+    height: 3vh;
+    margin: 20px;
+    font-size: 40px;
+    border-radius: 10px;
+    border:none;
+    padding: 6px 20px;
+    outline: none;
+}
+#use1{
+    display: flex;
+    justify-content: space-between;   
+    width: 70%;
+}
+#use1 input{
+    width: 45%;
+}
+
+.d1 input:focus{
+    border:2px solid #2691d9;
+}
+div.log1{
+    font-size: 1.4em;
+    text-align: center;
+}
+.sign{
+    width: 70%;
+    height: 7vh;
+    margin: auto;
+    display: flex;
+}
+.sign input{
+    background: #1d1c1c;
+    color: #fff;
+    width: 70%;
+    height: 3.5vh;
+    margin: auto;
+    font-size: 1.8em;
+    padding: 10px;
+    border-radius: 10px;
+    letter-spacing: 1px;
+}
